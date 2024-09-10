@@ -368,13 +368,19 @@ export interface ApiCarpetCarpet extends Schema.CollectionType {
     singularName: 'carpet';
     pluralName: 'carpets';
     displayName: 'carpets';
+    description: '';
   };
   options: {
     draftAndPublish: true;
   };
   attributes: {
     title: Attribute.String;
-    cover: Attribute.Media;
+    thumbnail: Attribute.Media;
+    description: Attribute.Text;
+    images: Attribute.Media;
+    price: Attribute.Integer;
+    available: Attribute.Integer;
+    year: Attribute.BigInteger;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

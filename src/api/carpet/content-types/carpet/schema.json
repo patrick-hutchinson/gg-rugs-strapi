@@ -4,7 +4,8 @@
   "info": {
     "singularName": "carpet",
     "pluralName": "carpets",
-    "displayName": "carpets"
+    "displayName": "carpets",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -14,15 +15,39 @@
     "title": {
       "type": "string"
     },
-    "cover": {
+    "thumbnail": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
+      ]
+    },
+    "description": {
+      "type": "text"
+    },
+    "images": {
       "type": "media",
-      "multiple": false
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "price": {
+      "type": "integer"
+    },
+    "available": {
+      "type": "integer"
+    },
+    "year": {
+      "type": "biginteger"
     }
   }
 }
