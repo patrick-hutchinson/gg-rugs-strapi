@@ -48,6 +48,9 @@
     },
     "year": {
       "type": "biginteger"
+    },
+    "dimensions": {
+      "type": "string"
     }
   }
 }

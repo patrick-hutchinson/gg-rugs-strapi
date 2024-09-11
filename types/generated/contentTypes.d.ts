@@ -381,6 +381,7 @@ export interface ApiCarpetCarpet extends Schema.CollectionType {
     price: Attribute.Integer;
     available: Attribute.Integer;
     year: Attribute.BigInteger;
+    dimensions: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
