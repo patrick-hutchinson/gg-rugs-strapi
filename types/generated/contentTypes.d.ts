@@ -839,6 +839,7 @@ export interface ApiCarpetCarpet extends Schema.CollectionType {
     available: Attribute.Integer;
     year: Attribute.BigInteger;
     dimensions: Attribute.String;
+    imagegrid: Attribute.Component<'image-grid.image-grid-01', true>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -917,6 +918,29 @@ export interface ApiContactContact extends Schema.SingleType {
   };
 }
 
+export interface ApiHomeHome extends Schema.SingleType {
+  collectionName: 'homes';
+  info: {
+    singularName: 'home';
+    pluralName: 'homes';
+    displayName: 'home';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    ruggrid: Attribute.Component<'rug-grid.rug-grid', true>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<'api::home.home', 'oneToOne', 'admin::user'> &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<'api::home.home', 'oneToOne', 'admin::user'> &
+      Attribute.Private;
+  };
+}
+
 declare module '@strapi/types' {
   export module Shared {
     export interface ContentTypes {
@@ -939,6 +963,7 @@ declare module '@strapi/types' {
       'api::carpet.carpet': ApiCarpetCarpet;
       'api::commission.commission': ApiCommissionCommission;
       'api::contact.contact': ApiContactContact;
+      'api::home.home': ApiHomeHome;
     }
   }
 }

@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_image_grid_image_grid_01s",
+  "info": {
+    "displayName": "image-grid",
+    "icon": "apps",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "row": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}

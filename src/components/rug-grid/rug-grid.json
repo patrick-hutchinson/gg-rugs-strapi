@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_rug_grid_rug_grids",
+  "info": {
+    "displayName": "rug-grid",
+    "icon": "dashboard",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "carpets": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::carpet.carpet"
+    }
+  }
+}

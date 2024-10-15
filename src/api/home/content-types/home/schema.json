@@ -1,0 +1,22 @@
+{
+  "kind": "singleType",
+  "collectionName": "homes",
+  "info": {
+    "singularName": "home",
+    "pluralName": "homes",
+    "displayName": "home",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ruggrid": {
+      "displayName": "rug-grid",
+      "type": "component",
+      "repeatable": true,
+      "component": "rug-grid.rug-grid"
+    }
+  }
+}
