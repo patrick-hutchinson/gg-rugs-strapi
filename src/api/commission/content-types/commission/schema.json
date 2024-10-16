@@ -27,6 +27,9 @@
       "type": "component",
       "repeatable": true,
       "component": "image-grid.image-grid-01"
+    },
+    "description": {
+      "type": "text"
     }
   }
 }

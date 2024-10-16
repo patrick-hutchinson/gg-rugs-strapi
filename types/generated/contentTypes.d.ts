@@ -870,6 +870,7 @@ export interface ApiCommissionCommission extends Schema.SingleType {
   attributes: {
     images: Attribute.Media;
     imagegrid: Attribute.Component<'image-grid.image-grid-01', true>;
+    description: Attribute.Text;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
