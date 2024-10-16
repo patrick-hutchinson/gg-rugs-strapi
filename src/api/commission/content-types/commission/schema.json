@@ -4,7 +4,8 @@
   "info": {
     "singularName": "commission",
     "pluralName": "commissions",
-    "displayName": "commission"
+    "displayName": "commission",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -12,14 +13,20 @@
   "pluginOptions": {},
   "attributes": {
     "images": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
+    },
+    "imagegrid": {
+      "type": "component",
+      "repeatable": true,
+      "component": "image-grid.image-grid-01"
     }
   }
 }

@@ -9,6 +9,7 @@ export interface ImageGridImageGrid01 extends Schema.Component {
   };
   attributes: {
     row: Attribute.Media;
+    description: Attribute.Text;
   };
 }
 

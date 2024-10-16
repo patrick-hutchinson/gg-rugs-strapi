@@ -831,12 +831,10 @@ export interface ApiCarpetCarpet extends Schema.CollectionType {
     draftAndPublish: true;
   };
   attributes: {
-    title: Attribute.String;
-    thumbnail: Attribute.Media;
+    title: Attribute.String & Attribute.Required & Attribute.Unique;
+    thumbnail: Attribute.Media & Attribute.Required;
     description: Attribute.Text;
-    images: Attribute.Media;
     price: Attribute.Integer;
-    available: Attribute.Integer;
     year: Attribute.BigInteger;
     dimensions: Attribute.String;
     imagegrid: Attribute.Component<'image-grid.image-grid-01', true>;
@@ -864,12 +862,14 @@ export interface ApiCommissionCommission extends Schema.SingleType {
     singularName: 'commission';
     pluralName: 'commissions';
     displayName: 'commission';
+    description: '';
   };
   options: {
     draftAndPublish: true;
   };
   attributes: {
     images: Attribute.Media;
+    imagegrid: Attribute.Component<'image-grid.image-grid-01', true>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
